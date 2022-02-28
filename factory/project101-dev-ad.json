@@ -1,0 +1,9 @@
+{
+	"name": "project101-dev-ad",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3443199b-4206-4b35-8314-ea98ca76b780",
+		"tenantId": "c2377d4f-eb1f-4d19-8ea4-18a8e831a7cb"
+	}
+}
