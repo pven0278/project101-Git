@@ -86,6 +86,27 @@
 						"type": "JsonReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Validate file",
+				"type": "Validation",
+				"dependsOn": [
+					{
+						"activity": "Copy data source to destination",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_output",
+						"type": "DatasetReference"
+					},
+					"timeout": "7.00:00:00",
+					"sleep": 10
+				}
 			}
 		],
 		"annotations": [],
